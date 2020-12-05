@@ -712,6 +712,7 @@ button {
 .question-content {
   height: 0;
   visibility: hidden;
+  font-size: 0;
   line-height: 32px;
   opacity: 0;
   transition: opacity .2s linear, padding-top .2s linear, padding-bottom .2s linear, transform .2s linear;
@@ -724,6 +725,7 @@ button {
   padding-left: 25px;
   max-width: 1055px;
   visibility: visible;
+  font-size: inherit;
   opacity: 1;
 }
 
@@ -1398,6 +1400,10 @@ button {
     line-height: 26px;
   }
 
+  .questions-list__item.active .question-content {
+    font-size: 14px;
+  }
+
   .footer-inner {
     flex-direction: column-reverse;
   }
@@ -1593,6 +1599,11 @@ button {
   .question-title {
     padding-right: 60px;
     font-size: 16px;
+  }
+
+  .questions-list__item.active .question-content {
+    font-size: 14px;
+    line-height: 1.5;
   }
 
   .footer-center {
