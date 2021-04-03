@@ -187,48 +187,140 @@
         </h2>
         <ul class="works-steps" aria-label="4 шага раздела Как мы работаем">
           <li class="works-step">
-            <a href="#" class="step-link active" aria-label="Первый шаг">
+            <button class="step-link active" data-path="one" aria-label="Первый шаг">
               1 шаг
-            </a>
+            </button>
           </li>
           <li class="works-step">
-            <a href="#" class="step-link" aria-label="Второй шаг">
+            <button class="step-link" data-path="two" aria-label="Второй шаг">
               2 шаг
-            </a>
+            </button>
           </li>
           <li class="works-step">
-            <a href="#" class="step-link" aria-label="Третий шаг">
+            <button class="step-link" data-path="three" aria-label="Третий шаг">
               3 шаг
-            </a>
+            </button>
           </li>
           <li class="works-step">
-            <a href="#" class="step-link" aria-label="Четвёртый шаг">
+            <button class="step-link" data-path="four" aria-label="Четвёртый шаг">
               4 шаг
-            </a>
+            </button>
           </li>
         </ul>
-        <div class="works-info">
-          <div class="works-info__left">
-            <div class="works-description section-text">
-              <h3 class="works-description__title">Проводим консультацию</h3>
-              <p>Влечет за собой процесс внедрения и модернизации приоритизации разума над
-                эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут
-                объективно
-                рассмотрены соответствующими инстанциями. А также представители современных социальных резервов,
-                инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь
-                частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты
-                целой
-                серии независимых исследований. Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии
-                освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется,
-                призваны к ответу.</p>
+        <div class="works-info works-info__active" data-target="one">
+          <div class="works-info__container">
+            <div class="works-info__left">
+              <div class="works-description section-text">
+                <h3 class="works-description__title">Проводим консультацию</h3>
+                <p>Влечет за собой процесс внедрения и модернизации приоритизации разума над
+                  эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики
+                  будут
+                  объективно
+                  рассмотрены соответствующими инстанциями. А также представители современных социальных резервов,
+                  инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего
+                  лишь
+                  частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты
+                  целой
+                  серии независимых исследований. Кстати, стремящиеся вытеснить традиционное производство,
+                  нанотехнологии
+                  освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется,
+                  призваны к ответу.</p>
+              </div>
+              <div class="works-info__buttons">
+                <a class="works-info__details btn btn--orange" href="#">Подробнее</a>
+                <button class="works-info__btn btn">Договор</button>
+              </div>
             </div>
-            <div class="works-info__buttons">
-              <a class="works-info__details btn btn--orange" href="#">Подробнее</a>
-              <button class="works-info__btn btn">Договор</button>
+            <div class="works-image">
+              <img src="./img/how_we_works_1.jpg" alt="Как мы работаем">
             </div>
           </div>
-          <div class="works-image">
-            <img src="./img/how_we_works_1.jpg" alt="Как мы работаем">
+        </div>
+        <div class="works-info" data-target="two">
+          <div class="works-info__container">
+            <div class="works-info__left">
+              <div class="works-description section-text">
+                <h3 class="works-description__title">Проводим ещё одну консультацию</h3>
+                <p>Влечет за собой процесс внедрения и модернизации приоритизации разума над
+                  эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики
+                  будут
+                  объективно
+                  рассмотрены соответствующими инстанциями. А также представители современных социальных резервов,
+                  инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего
+                  лишь
+                  частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты
+                  целой
+                  серии независимых исследований. Кстати, стремящиеся вытеснить традиционное производство,
+                  нанотехнологии
+                  освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется,
+                  призваны к ответу.</p>
+              </div>
+              <div class="works-info__buttons">
+                <a class="works-info__details btn btn--orange" href="#">Подробнее</a>
+                <button class="works-info__btn btn">Договор</button>
+              </div>
+            </div>
+            <div class="works-image">
+              <img src="./img/how_we_works_1.jpg" alt="Как мы работаем">
+            </div>
+          </div>
+        </div>
+        <div class="works-info" data-target="three">
+          <div class="works-info__container">
+            <div class="works-info__left">
+              <div class="works-description section-text">
+                <h3 class="works-description__title">Проводим третью консультацию</h3>
+                <p>Влечет за собой процесс внедрения и модернизации приоритизации разума над
+                  эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики
+                  будут
+                  объективно
+                  рассмотрены соответствующими инстанциями. А также представители современных социальных резервов,
+                  инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего
+                  лишь
+                  частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты
+                  целой
+                  серии независимых исследований. Кстати, стремящиеся вытеснить традиционное производство,
+                  нанотехнологии
+                  освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется,
+                  призваны к ответу.</p>
+              </div>
+              <div class="works-info__buttons">
+                <a class="works-info__details btn btn--orange" href="#">Подробнее</a>
+                <button class="works-info__btn btn">Договор</button>
+              </div>
+            </div>
+            <div class="works-image">
+              <img src="./img/how_we_works_1.jpg" alt="Как мы работаем">
+            </div>
+          </div>
+        </div>
+        <div class="works-info" data-target="four">
+          <div class="works-info__container">
+            <div class="works-info__left">
+              <div class="works-description section-text">
+                <h3 class="works-description__title">Проводим четвёртую консультацию</h3>
+                <p>Влечет за собой процесс внедрения и модернизации приоритизации разума над
+                  эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики
+                  будут
+                  объективно
+                  рассмотрены соответствующими инстанциями. А также представители современных социальных резервов,
+                  инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего
+                  лишь
+                  частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты
+                  целой
+                  серии независимых исследований. Кстати, стремящиеся вытеснить традиционное производство,
+                  нанотехнологии
+                  освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется,
+                  призваны к ответу.</p>
+              </div>
+              <div class="works-info__buttons">
+                <a class="works-info__details btn btn--orange" href="#">Подробнее</a>
+                <button class="works-info__btn btn">Договор</button>
+              </div>
+            </div>
+            <div class="works-image">
+              <img src="./img/how_we_works_1.jpg" alt="Как мы работаем">
+            </div>
           </div>
         </div>
       </div>
@@ -430,11 +522,11 @@
     </div>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="./js/main.js"></script>
   <script src="./js/focus-visible.min.js"></script>
-
   <!-- Swiper Script: -->
   <script src="./js/swiper-bundle.min.js"></script>
+  <script src="./js/tabs.js"></script>
+  <script src="./js/main.js"></script>
 
 </body>
 

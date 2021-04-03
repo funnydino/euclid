@@ -509,6 +509,12 @@ button {
   border-color: #cacaca;
 }
 
+.step-link {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .step-link.active {
   position: relative;
 }
@@ -518,7 +524,7 @@ button {
   content: '';
   width: 100%;
   height: 3px;
-  top: -11px;
+  top: -12px;
   background-color: var(--main-color);
   opacity: 0;
   transition: opacity .2s linear;
@@ -550,6 +556,14 @@ button {
 }
 
 .works-info {
+  display: none;
+}
+
+.works-info__active {
+  display: block;
+}
+
+.works-info__container {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
@@ -1177,7 +1191,7 @@ button {
     border-color: #cacaca;
   }
 
-  .works-info {
+  .works-info__container {
     margin-top: 20px;
   }
 
@@ -1271,7 +1285,7 @@ button {
     line-height: 2;
   }
 
-  .works-info {
+  .works-info__container {
     flex-wrap: wrap-reverse;
   }
 
@@ -1786,7 +1800,7 @@ button {
     display: none;
   }
 
-  .works-info {
+  .works-info__container {
     margin-top: 20px;
   }
 
