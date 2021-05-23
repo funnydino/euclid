@@ -194,8 +194,6 @@ button {
 
 .header-logo {
   margin-right: auto;
-  width: 224px;
-  height: 72px;
 }
 
 .header-logo img {
@@ -819,8 +817,6 @@ button {
 
 .footer-logo {
   margin-bottom: 11px;
-  width: 224px;
-  height: 72px;
 }
 
 .footer-logo img {
@@ -1035,7 +1031,7 @@ button {
 
   .header-logo img {
     width: 200px;
-    height: auto;
+    height: 64px;
   }
 
   .nav-item:not(:last-child) {
@@ -1139,7 +1135,7 @@ button {
 
   .header-logo img {
     width: 150px;
-    height: auto;
+    height: 48px;
   }
 
   .nav-toggle {
@@ -1498,6 +1494,7 @@ button {
 
   .header-logo img {
     width: 130px;
+    height: 42px;
   }
 
   .hero__inner {
@@ -1689,6 +1686,7 @@ button {
 
   .header-logo img {
     width: 97px;
+    height: 31px;
     margin-left: 0;
   }
 
@@ -1919,7 +1917,7 @@ button {
 
   .footer-logo img {
     width: 131px;
-    height: auto;
+    height: 42px;
   }
 
   .footer-social__item:not(:last-child) {
