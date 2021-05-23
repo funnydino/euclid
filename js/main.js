@@ -93,11 +93,11 @@
 
     sliderWidth();
 
-    const onResize = () => {
-      sliderWidth();
-      offset = 0;
-      slidesContainer.style.left = 0;
-    };
+    // const onResize = () => {
+    //   sliderWidth();
+    //   offset = 0;
+    //   slidesContainer.style.left = 0;
+    // };
 
     let timerId = setTimeout(function animation() {
       offset -= slidesWidth;
@@ -162,9 +162,9 @@
       myFunction();
     });
 
-    window.addEventListener('resize', function () {
-      onResize;
-    });
+    // window.addEventListener('resize', function () {
+    //   onResize;
+    // });
 
   });
 
