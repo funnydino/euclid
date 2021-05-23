@@ -194,6 +194,8 @@ button {
 
 .header-logo {
   margin-right: auto;
+  width: 224px;
+  height: 72px;
 }
 
 .header-logo img {
@@ -817,6 +819,8 @@ button {
 
 .footer-logo {
   margin-bottom: 11px;
+  width: 224px;
+  height: 72px;
 }
 
 .footer-logo img {
