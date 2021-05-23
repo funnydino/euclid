@@ -79,19 +79,19 @@
 
     // Slider Animation:
 
-    let offset = 0;
-    let slidesWidth;
-    const delay = 5000;
+    // let offset = 0;
+    // let slidesWidth;
+    // const delay = 5000;
 
-    const sliderWidth = () => {
-      slidesWidth = slider.offsetWidth;
-      slidesContainer.style.width = slidesWidth * slides.length + 'px';
-      slides.forEach((el) => {
-        el.style.width = slider.offsetWidth + 'px';
-      });
-    };
+    // const sliderWidth = () => {
+    //   slidesWidth = slider.offsetWidth;
+    //   slidesContainer.style.width = slidesWidth * slides.length + 'px';
+    //   slides.forEach((el) => {
+    //     el.style.width = slider.offsetWidth + 'px';
+    //   });
+    // };
 
-    sliderWidth();
+    // sliderWidth();
 
     // const onResize = () => {
     //   sliderWidth();
@@ -99,14 +99,14 @@
     //   slidesContainer.style.left = 0;
     // };
 
-    let timerId = setTimeout(function animation() {
-      offset -= slidesWidth;
-      if (-offset > slidesWidth * (slides.length - 1)) {
-        offset = 0;
-      };
-      slidesContainer.style.left = offset + 'px';
-      timerId = setTimeout(animation, delay);
-    }, delay);
+    // let timerId = setTimeout(function animation() {
+    //   offset -= slidesWidth;
+    //   if (-offset > slidesWidth * (slides.length - 1)) {
+    //     offset = 0;
+    //   };
+    //   slidesContainer.style.left = offset + 'px';
+    //   timerId = setTimeout(animation, delay);
+    // }, delay);
 
     // How we Works Tabs:
 
