@@ -77,37 +77,6 @@
       console.log('Scroll enabled!');
     };
 
-    // Slider Animation:
-
-    // let offset = 0;
-    // let slidesWidth;
-    // const delay = 5000;
-
-    // const sliderWidth = () => {
-    //   slidesWidth = slider.offsetWidth;
-    //   slidesContainer.style.width = slidesWidth * slides.length + 'px';
-    //   slides.forEach((el) => {
-    //     el.style.width = slider.offsetWidth + 'px';
-    //   });
-    // };
-
-    // sliderWidth();
-
-    // const onResize = () => {
-    //   sliderWidth();
-    //   offset = 0;
-    //   slidesContainer.style.left = 0;
-    // };
-
-    // let timerId = setTimeout(function animation() {
-    //   offset -= slidesWidth;
-    //   if (-offset > slidesWidth * (slides.length - 1)) {
-    //     offset = 0;
-    //   };
-    //   slidesContainer.style.left = offset + 'px';
-    //   timerId = setTimeout(animation, delay);
-    // }, delay);
-
     // How we Works Tabs:
 
     document.querySelectorAll('.step-link').forEach(function (tabsBtn) {
@@ -161,10 +130,6 @@
     window.addEventListener('scroll', function () {
       myFunction();
     });
-
-    // window.addEventListener('resize', function () {
-    //   onResize;
-    // });
 
   });
 
