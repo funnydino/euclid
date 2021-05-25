@@ -1,48 +1,16 @@
-@font-face {
-  font-family: 'montserrat';
-  src: url('../fonts/montserrat-bold-webfont.woff2') format('woff2'),
-    url('../fonts/montserrat-bold-webfont.woff') format('woff');
-  font-display: swap;
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'montserrat';
-  src: url('../fonts/montserrat-extrabold-webfont.woff2') format('woff2'),
-    url('../fonts/montserrat-extrabold-webfont.woff') format('woff');
-  font-display: swap;
-  font-weight: 800;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'montserrat';
-  src: url('../fonts/montserrat-regular-webfont.woff2') format('woff2'),
-    url('../fonts/montserrat-regular-webfont.woff') format('woff');
-  font-display: swap;
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'montserrat';
-  src: url('../fonts/montserrat-semibold-webfont.woff2') format('woff2'),
-    url('../fonts/montserrat-semibold-webfont.woff') format('woff');
-  font-display: swap;
-  font-weight: 600;
-  font-style: normal;
-}
-
 :root {
   /* Задаём фирменный оранжевый цвет как основной */
   --main-color: rgb(255, 153, 0);
 }
 
+html {
+  box-sizing: border-box;
+}
+
 *,
 *::after,
 *::before {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 *:focus,
@@ -69,8 +37,8 @@ ul {
 }
 
 a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
 
 img {
@@ -336,6 +304,7 @@ button {
 }
 
 .hero__inner {
+  background-color: #333;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -410,8 +379,6 @@ button {
 .about-blocks__main {
   position: relative;
   flex: 0 1 870px;
-  min-height: 622px;
-  min-width: 670px;
   margin-right: 30px;
   background-image: url("../img/about.jpg");
   background-repeat: no-repeat;
@@ -422,6 +389,7 @@ button {
 
 .main-block__content--outside {
   display: none;
+  width: 100%;
 }
 
 .main-block__content {
@@ -461,7 +429,6 @@ button {
   flex-direction: column;
   justify-content: space-between;
   flex: 0 1 870px;
-  min-width: 420px;
 }
 
 .secondary-block {
@@ -480,30 +447,25 @@ button {
   box-shadow: 0 0 5px #666;
 }
 
-.secondary-block-1__image {
-  background-image: url('../img/svg/about_box.svg');
+.secondary-block__text {
+  padding-top: 15px;
+  padding-left: 235px;
   background-repeat: no-repeat;
   background-position: left;
-  background-size: 180px 100%;
+}
+
+.secondary-block-1__image {
+  background-image: url('../img/svg/about_box.svg');
 }
 
 .secondary-block-2__image {
   background-image: url('../img/svg/about_gear.svg');
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: 180px 100%;
 }
 
 .secondary-block__header {
   font-size: 24px;
   font-weight: 700;
   line-height: 40px;
-}
-
-.secondary-block__text {
-  max-width: 700px;
-  padding-top: 15px;
-  padding-left: 235px;
 }
 
 /* How We Works Section */
@@ -1015,9 +977,6 @@ button {
 
   .hero__inner {
     padding: 200px 45px 114px;
-  }
-
-  .hero__inner {
     background-image: url('../img/bg/hero_1_1024.jpg');
     animation-name: hero__bg-change--1024;
   }
@@ -1028,18 +987,14 @@ button {
 
   .about-blocks {
     flex-direction: column;
-  }
-
-  .about-blocks__main,
-  .about-blocks__secondary {
+    align-items: center;
+    max-width: 924px;
     margin: 0 auto;
   }
 
   .about-blocks__main {
-    flex: 0 1 924px;
+    margin-right: 0;
     width: 100%;
-    max-width: 924px;
-    min-width: 640px;
     max-height: 640px;
     margin-bottom: 50px;
   }
@@ -1047,8 +1002,6 @@ button {
   .about-blocks__secondary {
     flex: 0 1 auto;
     width: 100%;
-    max-width: 924px;
-    min-width: 640px;
   }
 
   .secondary-block:not(:last-child) {
@@ -1064,12 +1017,7 @@ button {
     padding-left: 238px;
     font-size: 16px;
     line-height: 32px;
-  }
-
-  .secondary-block-1__image,
-  .secondary-block-2__image {
     background-position: left center;
-    background-size: 180px 100%;
   }
 
   .footer-text {
@@ -1145,7 +1093,7 @@ button {
   }
 
   .hero__inner {
-    padding-top: 160px;
+    padding: 135px 45px 100px;
   }
 
   .hero-text {
@@ -1173,10 +1121,6 @@ button {
 
   .main-block__content {
     padding: 40px 50px 40px 45px;
-  }
-
-  .main-block__text {
-    max-width: 530px;
   }
 
   .works-steps {
@@ -1316,29 +1260,23 @@ button {
   }
 
   .hero__inner {
-    padding: 191px 10px 113px 40px;
+    padding: 155px 20px 90px 25px;
+    background-image: url('../img/bg/hero_1_768.jpg');
+    animation-name: hero__bg-change--768;
   }
 
   .hero-text {
     padding: 0;
+    margin-bottom: 80px;
   }
 
   .about-blocks__main {
-    flex: 0 1 650px;
-    min-width: 440px;
-    max-height: 650px;
     margin-bottom: 40px;
+    background-image: url('../img/about_768.jpg');
   }
 
   .main-block__content {
     padding: 25px 30px;
-  }
-
-  .about-blocks__secondary {
-    flex: 0 1 auto;
-    width: 100%;
-    max-width: 691px;
-    min-width: 440px;
   }
 
   .secondary-block {
@@ -1355,11 +1293,7 @@ button {
     padding-left: 152px;
     font-size: 17px;
     line-height: 32px;
-  }
-
-  .secondary-block-1__image,
-  .secondary-block-2__image {
-    background-size: 118px 100%;
+    background-size: 118px;
   }
 
   .works-steps {
@@ -1378,8 +1312,7 @@ button {
   }
 
   .works-image img {
-    width: 100%;
-    max-height: 284px;
+    height: auto;
     object-fit: cover;
   }
 
@@ -1466,6 +1399,11 @@ button {
     padding-right: 40px;
   }
 
+  .hero__inner {
+    background-image: url('../img/bg/hero_1_576.jpg');
+    animation-name: hero__bg-change--576;
+  }
+
   #menu.active {
     transform: translateX(-20px);
   }
@@ -1499,11 +1437,9 @@ button {
   }
 
   .about-blocks__main {
-    flex: 0 1 460px;
-    min-height: 460px;
-    min-width: 262px;
-    max-height: 650px;
+    flex-basis: 425px;
     margin-bottom: 9px;
+    background-image: url('../img/about_576.jpg');
   }
 
   .main-block__content {
@@ -1552,12 +1488,7 @@ button {
   .secondary-block__text {
     padding-top: 120px;
     padding-left: 0;
-  }
-
-  .secondary-block-1__image,
-  .secondary-block-2__image {
     background-position: top left;
-    background-size: 118px;
   }
 
   .works-info__buttons {
@@ -1622,6 +1553,11 @@ button {
     padding-right: 7px;
   }
 
+  .hero-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .btn {
     font-size: 12px;
     line-height: 15px;
@@ -1680,6 +1616,11 @@ button {
     text-align: center;
   }
 
+  .hero__inner {
+    background-image: url('../img/bg/hero_1_375.jpg');
+    animation-name: hero__bg-change--375;
+  }
+
   .hero-text {
     margin-bottom: 36px;
   }
@@ -1692,7 +1633,7 @@ button {
   .hero-description {
     font-size: 12px;
     line-height: 15px;
-    font-weight: 500;
+    font-weight: 600;
   }
 
   .about-title {
@@ -1704,9 +1645,8 @@ button {
   }
 
   .about-blocks__main {
-    flex: 0 1 200px;
-    min-width: 270px;
-    min-height: auto;
+    flex-basis: 235px;
+    background-image: url('../img/about_375.jpg');
   }
 
   .about-blocks__main:hover {
@@ -1728,17 +1668,13 @@ button {
     margin-bottom: 40px;
   }
 
-  .secondary-block-1__image,
-  .secondary-block-2__image {
-    background-size: 64px;
-  }
-
   .secondary-block {
     padding: 0;
   }
 
   .secondary-block__text {
     padding-top: 62px;
+    background-size: 64px;
   }
 
   .secondary-block:hover {
@@ -1749,7 +1685,7 @@ button {
     margin-bottom: 5px;
     font-size: 18px;
     line-height: 22px;
-    font-weight: 500;
+    font-weight: 600;
   }
 
   .secondary-block:not(:last-child) {
@@ -1788,7 +1724,7 @@ button {
   .works-description__title {
     font-size: 18px;
     line-height: 32px;
-    font-weight: 500;
+    font-weight: 600;
   }
 
   .works-info__buttons {
@@ -1813,7 +1749,7 @@ button {
     padding-bottom: 21px;
     font-size: 14px;
     line-height: 24px;
-    font-weight: 500;
+    font-weight: 600;
   }
 
   .question-header::after {

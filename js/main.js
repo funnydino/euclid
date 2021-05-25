@@ -11,9 +11,6 @@
     const page = document.querySelector('.page');
     const hero = document.querySelector('.hero');
     const container = document.querySelector('.container');
-    const slider = document.querySelector('.slider');
-    const slidesContainer = document.querySelector('.slider__slides');
-    const slides = document.querySelectorAll('.slider__slide');
     const fixedBlocks = document.querySelectorAll('.fixed-block');
     const questionsList = document.querySelectorAll('.questions-list__item');
 
@@ -126,6 +123,8 @@
         header.classList.remove('header--fixed');
       };
     };
+
+    myFunction();
 
     window.addEventListener('scroll', function () {
       myFunction();
